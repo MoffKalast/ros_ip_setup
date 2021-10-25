@@ -13,4 +13,4 @@ Replace existing files:
 Add files:
 - /usr/sbin/roscore
 
-The magni-base may not need to be replaced, that needs testing.
+The /usr/sbin/magni-base file may not need to be replaced, that needs testing.
