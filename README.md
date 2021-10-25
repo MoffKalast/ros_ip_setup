@@ -13,3 +13,4 @@ Replace existing files:
 Add files:
 - /usr/sbin/roscore
 
+The magni-base and magni-base.service may not need to be replaced, but it may be a good idea to do it anyway just in case.
