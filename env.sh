@@ -1,11 +1,11 @@
 #!/bin/sh
 
-ip="$(hostname -I)"
+ip="$(hostname -I | awk '{print $2}')"
 
 while [ -z $ip ]
 do
 	sleep 1
-	ip="$(hostname -I)"
+	ip="$(hostname -I | awk '{print $2}')"
 done
 
 #export ROS_IP=192.168.1.10
