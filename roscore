@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /opt/ros/kinetic/setup.sh
+source /opt/ros/noetic/setup.sh
 source /etc/ubiquity/env.sh
 
 while ! ping -c 1 -n -w 1 "$ROS_IP" &> /dev/null
