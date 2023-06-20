@@ -5,12 +5,15 @@ source /etc/ubiquity/env.sh
 
 while ! ping -c 1 -n -w 1 "$ROS_IP" &> /dev/null
 do
-	sleep 1
+        sleep 1
+        source /etc/ubiquity/env.sh
 done
 
-roscore &
+roscore -v &
 
 while ! echo exit | nc localhost 11311 > /dev/null
 do
-	sleep 1
+        sleep 1
 done
+
+exit 0
